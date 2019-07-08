@@ -8,6 +8,13 @@
 
     <h3 class="black f-titling">#000000</h3>
 
+    <section class="intro">
+      <header class="f-titling uc">
+        <h1>black</h1>
+        <h1>#000</h1>
+      </header>
+    </section>
+
     <section class="about">
       <aside>
         <ul class="f-akkurat">
@@ -90,6 +97,69 @@
     right: 0;
     transform: rotate(90deg);
     @include breakpoint(md) { display: inherit; }
+  }
+
+  .intro {
+    position: relative;
+    padding: 10rem 0 24rem;
+    color: transparent;
+    text-stroke: 1px var(--cloud);
+    -webkit-text-stroke: 1px var(--cloud);
+    font-size: 4.8rem;
+    line-height: 1.3;
+
+    @include breakpoint(mdl) { padding: 14rem 0 20rem; font-size: 6.4rem; }
+    @include breakpoint(lg)  { font-size: 8rem; }
+
+    h1:first-of-type {
+      margin-left: -4.4rem;
+      @include breakpoint(md) { margin-left: 0rem; }
+    }
+
+    h1:last-of-type {
+      position: absolute;
+      right: -6.4rem;
+
+      @include breakpoint(md) { right: 24%; }
+    }
+
+    h1:first-of-type:after {
+      display: block;
+      position: absolute;
+      z-index: var(--z1);
+      top: 20rem; left: 0;
+      width: 16rem; height: 24rem;
+      content: '';
+      background: url('../assets/img/info/01@2x.png') no-repeat center center;
+      background-size: cover;
+
+      @include breakpoint(md)  { width: 28rem; height: 43rem; top: 36rem; left: -11.2rem; }
+      @include breakpoint(mdl) { top: 24rem; left: 6%; }
+    }
+
+    h1:last-of-type:after {
+      display: block;
+      position: absolute;
+      z-index: var(--z1);
+      bottom: 5.6rem; right: 5.6rem;
+      width: 8.6rem; height: 9.4rem;
+      content: '';
+      background: url('../assets/img/info/02@2x.png') no-repeat center center;
+      background-size: cover;
+
+      @include breakpoint(md) { width: 15.6rem; height: 17.2rem; bottom: 28rem; right: -44%; }
+
+      @include breakpoint(mdl) {
+        width: 22rem; height: 24rem;
+        bottom: 0rem;
+      }
+
+      @include breakpoint(lg)  { right: -32%; }
+    }
+
+    .images {
+      display: flex;
+    }
   }
 
   .about {
