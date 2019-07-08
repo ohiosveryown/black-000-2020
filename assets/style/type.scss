@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'Gangster-Grotesk';
+	src: url('~static/font/gangster-grotesk.woff');
+	src: local('☺'), url('~static/font/gangster-grotesk.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Titling-Gothic';
+	src: url('~static/font/titling-gothic.woff');
+	src: local('☺'), url('~static/font/titling-gothic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Titling-Gothic-Wide';
+	src: url('~static/font/titling-gothic-wide.woff');
+	src: local('☺'), url('~static/font/titling-gothic-wide.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Akkurat-Mono';
+	src: url('~static/font/akkurat-mono.woff');
+	src: local('☺'), url('~static/font/akkurat-mono.woff') format('woff');
+}
+
+.f-gangster { font-family: 'Gangster-Grotesk', var(--system-ui); }
+.f-titling { font-family: 'Titling-Gothic', var(--system-ui); letter-spacing: 1px; }
+.f-titling-wide { font-family: 'Titling-Gothic-Wide', var(--system-ui); }
+.f-akkurat { font-family: 'Akkurat-Mono', var(--system-ui); }
+
+.f16 { font-size: 1.6rem; }
+.fw600 { font-weight: 600; }
+.uc { text-transform: uppercase; }
+
+.taj { text-align: justify; }
