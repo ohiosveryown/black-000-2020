@@ -13,7 +13,7 @@
       <div class="content">
         <img src="~/assets/img/02.jpg" alt="">
       </div>
-      <nuxt-link to="/test">
+      <nuxt-link to="/maura-chanz">
         <button class="f-gangster">View</button>
       </nuxt-link>
     </li>

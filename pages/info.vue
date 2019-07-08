@@ -6,6 +6,8 @@
       <Header title='back'/>
     </nuxt-link>
 
+    <h3 class="black f-titling">#000000</h3>
+
     <section class="about">
       <aside>
         <ul class="f-akkurat">
@@ -43,8 +45,11 @@
     <section class="credits">
       <h2 class="f-titling uc">Credits</h2>
       <h3 class="mb-1 f-akkurat taj">A project by <a target="_blank" href="http://www.royehandy.com/">Roy Handy</a></h3>
-      <h3 class="mb-5 f-akkurat taj">A site by <a target="_blank" href="https://www.ohiosveryown/">Matthew Pence</a></h3>
+      <h3 class="mb-5 f-akkurat taj">A site by <a target="_blank" href="http://www.ohiosveryown.co">Matthew Pence</a></h3>
     </section>
+
+    <!-- transtion covers -->
+    <div class="cover"/>
 
   </main>
 </template>
@@ -53,12 +58,39 @@
 <style lang="scss" scoped>
   @import '~/assets/style/grid.scss';
 
+  // page animation
+  .page-enter-active { transition: all 700ms ease; }
+  .page-leave-active { transition: all 400ms ease; }
+  .page-leave-active {
+    opacity: 0;
+  }
+
+  .cover {
+    position: fixed;
+    z-index: var(--z1);
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    will-change: transfrom;
+    background: var(--darkest);
+    transform-origin: top;
+  }
+
+
   h2 { margin-bottom: 2.4rem; font-size: 1.6rem; }
   h3, p { font-size: 1.5rem; }
   p + p { text-indent: 4ch; }
   a { text-decoration: underline; }
   ul { display: flex; flex-direction: column; }
   li { margin-bottom: .8rem; font-size: 1.5rem; }
+
+  .black {
+    display: none;
+    position: fixed;
+    top: 44%;
+    right: 0;
+    transform: rotate(90deg);
+    @include breakpoint(md) { display: inherit; }
+  }
 
   .about {
     display: flex;
@@ -131,5 +163,38 @@
       name: 'page',
       mode: 'in-out'
     },
+
+    mounted() {
+      // header
+      const header = anime({
+        targets: 'header',
+        opacity: [ 0, 1],
+        duration: 800,
+        delay: 1000,
+        easing: 'easeInOutQuart',
+      })
+
+      // cover
+      const cover = anime({
+        targets: '.cover',
+        translateY: [
+          { value: '-100vh', duration: 0, easing: 'cubicBezier(.6, 0, .4, 1)' },
+          { value: 0, duration: 800, easing: 'cubicBezier(.6, 0, .4, 1)' }
+        ],
+        opacity: [
+          { value: 1 },
+          { value: 0, duration: 800, delay: 500, easing: 'easeInOutQuad' }
+        ],
+      })
+
+      // main
+      const about = anime({
+        targets: '.about',
+        opacity: [ 0, 1],
+        duration: 800,
+        delay: 1000,
+        easing: 'easeInOutQuart',
+      })
+    }
   }
 </script>
