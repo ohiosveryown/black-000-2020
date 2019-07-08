@@ -133,8 +133,8 @@
       background: url('../assets/img/info/01@2x.png') no-repeat center center;
       background-size: cover;
 
-      @include breakpoint(md)  { width: 28rem; height: 43rem; top: 36rem; left: -11.2rem; }
-      @include breakpoint(mdl) { top: 24rem; left: 6%; }
+      @include breakpoint(md)  { width: 20rem; height: 29rem; top: 16rem; left: 2.4rem; }
+      @include breakpoint(mdl) { width: 28rem; height: 43rem; top: 24rem; left: 6%; }
     }
 
     h1:last-of-type:after {
@@ -147,7 +147,7 @@
       background: url('../assets/img/info/02@2x.png') no-repeat center center;
       background-size: cover;
 
-      @include breakpoint(md) { width: 15.6rem; height: 17.2rem; bottom: 28rem; right: -44%; }
+      @include breakpoint(md) { width: 15.6rem; height: 17.2rem; bottom: 4rem; right: -44%; }
 
       @include breakpoint(mdl) {
         width: 22rem; height: 24rem;
@@ -235,6 +235,15 @@
     },
 
     mounted() {
+      // 000
+      const black = anime({
+        targets: '.black',
+        opacity: [ 0, 1],
+        duration: 800,
+        delay: 1000,
+        easing: 'easeInOutQuart',
+      })
+
       // header
       const header = anime({
         targets: 'header',
