@@ -1,20 +1,16 @@
 <template>
-  <main class="debug width">
+  <main class="width">
 
     <!-- header -->
     <nuxt-link to="/">
       <Header title='back'/>
     </nuxt-link>
 
-    <header class="debug intro">
-      <div class="title f-titling uc">
-        <h1>black</h1>
-        <h1 class="tar">#000</h1>
-      </div>
-      <figure class="intro-image-01">
-        <img src="../assets/img/info/01@2x.png" alt="">
-      </figure>
-    </header>
+    <section class="about">
+      <h2 class="f-titling uc">About</h2>
+      <p class="f-akkurat taj">“#000”, or BLACK, is a collection of photos curated to express the cultural appreciation of the women owning their true self through their hair. Each woman presented in this series opened up about their hair journey exuding love and passion through each loop and coiled-strand as they worked toward a healthy relationship and understanding of their hair.</p>
+      <p class="f-akkurat taj">Throughout the project, 'versatility' is presented from many of the women and reflects my vision as to bring inspiration to those who are figuring out their path.</p>
+    </section>
 
   </main>
 </template>
@@ -23,34 +19,26 @@
 <style lang="scss" scoped>
   @import '~/assets/style/grid.scss';
 
-  .intro {
+  h2 { margin-bottom: 2.4rem; font-size: 1.6rem; }
+  p { font-size: 1.5rem; }
+  p + p { text-indent: 4ch; }
+
+  .about {
     position: relative;
-    margin-top: 16rem;
-    min-height: 112rem;
+    padding: 8rem 0 20rem
   }
 
-  .title {
-    position: relative;
-    color: transparent;
-    text-stroke: 1px var(--cloud);
-    -webkit-text-stroke: 1px var(--cloud);
-
-    @include breakpoint(mdl) {
-      width: grid-width(10);
-      /* font-size: 4.8vw; */
-      font-size: 5.6rem;
-    }
-  }
-
-  .intro-image-01 {
+  .about:after {
+    display: block;
     position: absolute;
-    top: 9.6rem;
-
-    @include breakpoint(mdl) {
-      margin-left: grid-width(1);
-      width: grid-width(3);
-    }
+    z-index: var(--z0);
+    bottom: 0; left: -4rem;
+    width: 24rem; height: 32rem;
+    content: '';
+    background: url('../assets/img/info/03@2x.png') no-repeat center center;
+    background-size: cover;
   }
+
 </style>
 
 
