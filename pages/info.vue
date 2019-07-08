@@ -12,6 +12,20 @@
       <p class="f-akkurat taj">Throughout the project, 'versatility' is presented from many of the women and reflects my vision as to bring inspiration to those who are figuring out their path.</p>
     </section>
 
+    <section class="purchase">
+      <h2 class="f-titling uc">Purchase the Book</h2>
+      <p class="mb-5 f-akkurat taj">Coffee Table Book &amp; Prints are available at: <a target="_blank" href="http://www.royehandy.com/shop">www.royehandy.com/shop</a></p>
+      <figure>
+        <img src="../assets/img/info/04@2x.png" alt="">
+      </figure>
+    </section>
+
+    <section class="credits">
+      <h2 class="f-titling uc">Credits</h2>
+      <h3 class="mb-1 f-akkurat taj">A project by <a target="_blank" href="http://www.royehandy.com/">Roy Handy</a></h3>
+      <h3 class="mb-5 f-akkurat taj">A site by <a target="_blank" href="https://www.ohiosveryown/">Matthew Pence</a></h3>
+    </section>
+
   </main>
 </template>
 
@@ -20,12 +34,14 @@
   @import '~/assets/style/grid.scss';
 
   h2 { margin-bottom: 2.4rem; font-size: 1.6rem; }
-  p { font-size: 1.5rem; }
+  h3, p { font-size: 1.5rem; }
   p + p { text-indent: 4ch; }
+  a { text-decoration: underline; }
 
   .about {
     position: relative;
-    padding: 8rem 0 20rem
+    margin-bottom: 7.2rem;
+    padding: 8rem 0 16rem;
   }
 
   .about:after {
@@ -37,6 +53,10 @@
     content: '';
     background: url('../assets/img/info/03@2x.png') no-repeat center center;
     background-size: cover;
+  }
+
+  .purchase, .credits {
+    margin-bottom: 7.2rem;
   }
 
 </style>
