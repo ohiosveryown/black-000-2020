@@ -8,20 +8,18 @@
 
     <section class="about">
       <aside>
-        <section class="models">
+        <ul class="f-akkurat">
           <h2 class="f-titling uc">Models</h2>
-          <ul class="f-akkurat">
-            <li>Maura Chanz</li>
-            <li>Kaira Fern</li>
-            <li>Alannah Felix</li>
-            <li>Melanie Fisher</li>
-            <li>Tanya Hargrove</li>
-            <li>Daphne Jacobs</li>
-            <li>Ryann McClure</li>
-            <li>Tisha Ollison</li>
-            <li>Amy Oum</li>
-          </ul>
-        </section>
+          <li>Maura Chanz</li>
+          <li>Kaira Fern</li>
+          <li>Alannah Felix</li>
+          <li>Melanie Fisher</li>
+          <li>Tanya Hargrove</li>
+          <li>Daphne Jacobs</li>
+          <li>Ryann McClure</li>
+          <li>Tisha Ollison</li>
+          <li>Amy Oum</li>
+        </ul>
       </aside>
 
       <article>
@@ -70,14 +68,15 @@
 
     aside {
       display: none;
-      @include breakpoint(mdl) {
+      @include breakpoint(md) {
         display: inherit;
         margin-top: 40rem;
+        /* transform: translateX(3.2rem); */
       }
     }
 
     article {
-      @include breakpoint(mdl) {
+      @include breakpoint(md) {
         margin-left: grid-width(5);
         width: grid-width(3.5);
       }
@@ -94,7 +93,7 @@
     background: url('../assets/img/info/03@2x.png') no-repeat center center;
     background-size: cover;
 
-    @include breakpoint(mdl) {
+    @include breakpoint(md) {
       bottom: 28rem; left: 44%;
     }
   }
@@ -107,7 +106,7 @@
     display: flex;
     flex-direction: column;
 
-    @include breakpoint(mdl) {
+    @include breakpoint(md) {
       margin: 0 auto;
       width: grid-width(10);
       flex-direction: row-reverse;
