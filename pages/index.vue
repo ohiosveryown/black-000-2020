@@ -2,7 +2,7 @@
   <main>
 
     <Halo/>
-    <nuxt-link to="/test">
+    <nuxt-link to="/info">
       <Header title='info'/>
     </nuxt-link>
     <List/>

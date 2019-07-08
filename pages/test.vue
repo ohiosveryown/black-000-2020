@@ -1,6 +1,9 @@
 <template>
   <main>
 
+    <!-- halo -->
+    <Halo/>
+
     <!-- header -->
     <nuxt-link to="/">
       <Header title='back'/>
@@ -114,6 +117,7 @@
 <script>
   import anime from 'animejs'
   import { colors } from '~/assets/logic.js'
+  import Halo from '~/components/Halo'
   import Header from '~/components/Header'
   export default {
     components: { Header },
