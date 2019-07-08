@@ -7,14 +7,36 @@
     </nuxt-link>
 
     <section class="about">
-      <h2 class="f-titling uc">About</h2>
-      <p class="f-akkurat taj">“#000”, or BLACK, is a collection of photos curated to express the cultural appreciation of the women owning their true self through their hair. Each woman presented in this series opened up about their hair journey exuding love and passion through each loop and coiled-strand as they worked toward a healthy relationship and understanding of their hair.</p>
-      <p class="f-akkurat taj">Throughout the project, 'versatility' is presented from many of the women and reflects my vision as to bring inspiration to those who are figuring out their path.</p>
+      <aside>
+        <section class="models">
+          <h2 class="f-titling uc">Models</h2>
+          <ul class="f-akkurat">
+            <li>Maura Chanz</li>
+            <li>Kaira Fern</li>
+            <li>Alannah Felix</li>
+            <li>Melanie Fisher</li>
+            <li>Tanya Hargrove</li>
+            <li>Daphne Jacobs</li>
+            <li>Ryann McClure</li>
+            <li>Tisha Ollison</li>
+            <li>Amy Oum</li>
+          </ul>
+        </section>
+      </aside>
+
+      <article>
+        <h2 class="f-titling uc">About</h2>
+        <p class="f-akkurat taj">“#000”, or BLACK, is a collection of photos curated to express the cultural appreciation of the women owning their true self through their hair. Each woman presented in this series opened up about their hair journey exuding love and passion through each loop and coiled-strand as they worked toward a healthy relationship and understanding of their hair.</p>
+        <p class="f-akkurat taj">Throughout the project, 'versatility' is presented from many of the women and reflects my vision as to bring inspiration to those who are figuring out their path.</p>
+      </article>
     </section>
 
     <section class="purchase">
-      <h2 class="f-titling uc">Purchase the Book</h2>
-      <p class="mb-5 f-akkurat taj">Coffee Table Book &amp; Prints are available at: <a target="_blank" href="http://www.royehandy.com/shop">www.royehandy.com/shop</a></p>
+      <article>
+        <h2 class="f-titling uc">Purchase the Book</h2>
+        <p class="mb-5 f-akkurat taj">The Coffee Table Book &amp; Prints are available at: <a target="_blank" href="http://www.royehandy.com/shop">www.royehandy.com/shop</a></p>
+      </article>
+
       <figure>
         <img src="../assets/img/info/04@2x.png" alt="">
       </figure>
@@ -37,11 +59,29 @@
   h3, p { font-size: 1.5rem; }
   p + p { text-indent: 4ch; }
   a { text-decoration: underline; }
+  ul { display: flex; flex-direction: column; }
+  li { margin-bottom: .8rem; font-size: 1.5rem; }
 
   .about {
+    display: flex;
     position: relative;
     margin-bottom: 7.2rem;
     padding: 8rem 0 16rem;
+
+    aside {
+      display: none;
+      @include breakpoint(mdl) {
+        display: inherit;
+        margin-top: 40rem;
+      }
+    }
+
+    article {
+      @include breakpoint(mdl) {
+        margin-left: grid-width(5);
+        width: grid-width(3.5);
+      }
+    }
   }
 
   .about:after {
@@ -53,10 +93,29 @@
     content: '';
     background: url('../assets/img/info/03@2x.png') no-repeat center center;
     background-size: cover;
+
+    @include breakpoint(mdl) {
+      bottom: 28rem; left: 44%;
+    }
   }
 
   .purchase, .credits {
     margin-bottom: 7.2rem;
+  }
+
+  .purchase {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mdl) {
+      margin: 0 auto;
+      width: grid-width(10);
+      flex-direction: row-reverse;
+      align-items: center;
+      transform: translateY(-9.6rem);
+
+      figure { margin: 0 3.2rem 5.6rem }
+    }
   }
 
 </style>
