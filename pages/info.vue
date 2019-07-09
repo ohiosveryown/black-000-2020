@@ -264,6 +264,10 @@
           { value: 1 },
           { value: 0, duration: 800, delay: 500, easing: 'easeInOutQuad' }
         ],
+        scaleY: [
+          { value: 1, duration: 800, delay: 500, easing: 'cubicBezier(.6, 0, .4, 1)' },
+          { value: 0, duration: 0, easing: 'cubicBezier(.6, 0, .4, 1)' }
+        ],
       })
 
       // main

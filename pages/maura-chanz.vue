@@ -14,7 +14,7 @@
       </div>
 
       <article class="content">
-        <h2 class="f-titling-wide uc">their story</h2>
+        <h2 class="f-titling-wide uc">her story</h2>
         <p class="f-akkurat taj">“#000”, or BLACK, is a collection of photos curated to express the cultural appreciation of the women owning their true self through their hair. Each woman presented in this series opened up about their hair journey exuding love and passion through each loop and coiled-strand as they worked toward a healthy relationship and understanding of their hair.</p>
 
         <!-- social links -->
@@ -224,7 +224,7 @@
     },
     data() {
       // image for view 🖼
-      return { url: require('~/assets/img/00-plant.jpg') }
+      return { url: require('~/assets/img/02.jpg') }
     },
     mounted() {
       // title - name injection 📛
