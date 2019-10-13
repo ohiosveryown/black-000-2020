@@ -1,18 +1,6 @@
 
     export default [
       {
-              path: "/",
-              meta: {
-                __relative: 'index.md',
-                __pageId: '26bb90aa'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--index-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/index.md?saberPage=26bb90aa")
-                
-              }
-            },
-{
               path: "/posts/test-one.html",
               meta: {
                 __relative: '_posts/test-one.md',
@@ -33,6 +21,18 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--_posts-test-two-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/test-two.md?saberPage=eb894e5e")
+                
+              }
+            },
+{
+              path: "/",
+              meta: {
+                __relative: 'index.md',
+                __pageId: '26bb90aa'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--index-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/index.md?saberPage=26bb90aa")
                 
               }
             },
