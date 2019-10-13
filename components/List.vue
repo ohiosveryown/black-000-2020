@@ -5,7 +5,7 @@
         <img src="~/assets/img/01.jpg" alt="">
       </div>
       <nuxt-link to="/maura-chanz">
-        <button class="f-gangster">View</button>
+        <button class="f-gangster">Vieww</button>
       </nuxt-link>
     </li>
 
