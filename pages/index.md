@@ -4,4 +4,4 @@ title: home
 injectAllPosts: true
 ---
 
-# This is home man
+# This is home
