@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     width: 100vw;
+    margin-bottom: 1.6rem;
     padding-bottom: 1.6rem;
   }
 

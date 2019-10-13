@@ -1,12 +1,24 @@
 <!-- layout -->
+<!-- layout -->
 <template>
-  <div class="debug slot-wrapper">
+  <div class="deaitl-wrapper">
+
+    <!-- nav -->
     <Navigation
       title = 'Home'
       link = '/'
     />
 
-    <slot/>
+    <!-- main -->
+    <main>
+      <h1>{{ page.first_name }}</h1>
+      <h1>{{ page.last_name }}</h1>
+      <p>{{ page.story }}</p>
+      <figure>
+        <img :src="page.assets.img" alt="">
+      </figure>
+    </main>
+
 
   </div>
 </template>
