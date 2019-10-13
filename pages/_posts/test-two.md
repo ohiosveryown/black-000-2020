@@ -2,7 +2,7 @@
 layout: detail
 title: test two
 first_name: Maura
-last_name: Chanz
+last_name: Channing
 assets:
   img: ./img/000-2.jpg
 story: |

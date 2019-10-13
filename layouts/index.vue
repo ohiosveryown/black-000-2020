@@ -33,6 +33,7 @@
   ul {
     display: flex;
     flex-direction: column;
+    color: var(--cloud);
   }
 </style>
 

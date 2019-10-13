@@ -3,6 +3,7 @@
 // various
 .debug { border: 2px solid hotpink; }
 .pointer { &:hover { cursor: pointer; } }
+.cloud { color: var(--cloud); }
 
 .width, .width-wide {
   position: relative;

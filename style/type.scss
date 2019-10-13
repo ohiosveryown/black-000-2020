@@ -18,7 +18,21 @@
 .f-prim { font-family: 'titling-gothic-extended', var(--system-ui); }
 .f-sec { font-family: 'akkurat-mono', var(--system-ui); }
 
-.fs-sm { font-size: 1.2rem;;}
+.fs-xl {
+  line-height: 1;
+  @include breakpoint(md) {
+    font-size: 4vw;
+  }
+}
+
+.fs-md { font-size: 1.6rem; }
+.fs-sm { font-size: 1.2rem; }
+
+.f-outline {
+  color: transparent;
+  text-stroke: 1px var(--darkest);
+  -webkit-text-stroke: 1px var(--darkest);
+}
 
 // var
 .uc { text-transform: uppercase; }

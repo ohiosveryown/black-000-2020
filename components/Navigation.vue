@@ -15,18 +15,17 @@
   @import '../style/anim.scss';
 
   nav {
-    position: sticky;
+    position: fixed;
     top: 1.6rem;
     display: flex;
     justify-content: center;
     width: 100vw;
-    margin-bottom: 1.6rem;
-    padding-bottom: 1.6rem;
   }
 
   .link {
     padding: 1.6rem 2.4rem 1.4rem;
-    background: tomato;
+    background: var(--darkest);
+    color: var(--cloud);
   }
 </style>
 
