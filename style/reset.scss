@@ -31,7 +31,6 @@
 }
 
 html {
-  overflow-x: hidden;
   box-sizing: border-box;
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased !important;
@@ -40,8 +39,7 @@ html {
 }
 
 body {
-  overflow: hidden;
-  background: #292124;
+  background: var(--darkest);
   color: #fff;
   font: normal 1.6rem/1.4 var(--system-ui);
 }

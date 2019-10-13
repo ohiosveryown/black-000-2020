@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: detail
 title: test two
 # injectAllPosts: true
 ---

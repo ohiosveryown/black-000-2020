@@ -1,16 +1,13 @@
 <!-- layout -->
 <template>
   <div class="debug slot-wrapper">
+    <Navigation
+      title = 'Home'
+      link = '/'
+    />
+
     <slot/>
-    <div class="recent-posts" v-if="page.posts">
 
-    </div>
-
-    <ul>
-      <li v-for="post in page.posts" :key="post.permalink">
-        <saber-link :to='post.permalink'>{{ post.title }}</saber-link>
-      </li>
-    </ul>
   </div>
 </template>
 
@@ -21,15 +18,18 @@
   @import '../style/reset.scss';
   @import '../style/util.scss';
   @import '../style/type.scss';
-  ul { display: flex; flex-direction: column; }
   // .page-enter-active, .page-leave-active { transition: all calc(var(--animbase) * 2) ease; }
 </style>
 
 
 <!-- logic -->
 <script>
+  import Navigation from '../components/Navigation'
+
   export default {
     props: [ 'page' ],
+    components: { Navigation, },
+
     head() {
       const pageTitle = this.page.title
       return {

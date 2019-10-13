@@ -1,3 +1,25 @@
+// imports
+@import './style/grid.scss';
+
+@font-face {
+  font-family: 'titling-gothic-extended';
+  src: url('../type/titling-gothic-extended.woff');
+  src: local('☺'), url('../type/titling-gothic-extended.woff') format('woff');
+  // 	font-display: swap;
+}
+
+@font-face {
+  font-family: 'akkurat-mono';
+  src: url('../type/akkurat-mono.woff');
+  src: local('☺'), url('../type/akkurat-mono.woff') format('woff');
+  // 	font-display: swap;
+}
+
+.f-prim { font-family: 'titling-gothic-extended', var(--system-ui); }
+.f-sec { font-family: 'akkurat-mono', var(--system-ui); }
+
+.fs-sm { font-size: 1.2rem;;}
+
 // var
 .uc { text-transform: uppercase; }
 .taj { text-align: justify; }

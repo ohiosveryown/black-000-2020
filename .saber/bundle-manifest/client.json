@@ -1,0 +1,105 @@
+{
+  "publicPath": "/_saber/",
+  "all": [
+    "js/404-page.891f4441.js",
+    "js/client.6687de54.js",
+    "js/page--_posts-test-one-md.58aacb4d.js",
+    "js/page--_posts-test-two-md.c0d76bc8.js",
+    "js/page--index-md.5e70c7a6.js"
+  ],
+  "initial": [
+    "js/client.6687de54.js"
+  ],
+  "async": [
+    "js/404-page.891f4441.js",
+    "js/page--_posts-test-one-md.58aacb4d.js",
+    "js/page--_posts-test-two-md.c0d76bc8.js",
+    "js/page--index-md.5e70c7a6.js"
+  ],
+  "modules": {
+    "30696544": [
+      1
+    ],
+    "46958086": [
+      4
+    ],
+    "6efd86de": [
+      1
+    ],
+    "74a3f238": [
+      1
+    ],
+    "22475ab3": [
+      1
+    ],
+    "2b2b9731": [
+      1
+    ],
+    "056611b6": [
+      1
+    ],
+    "f614e9e0": [
+      1
+    ],
+    "3e225eca": [
+      1
+    ],
+    "28b98132": [
+      1
+    ],
+    "4684b988": [
+      1
+    ],
+    "4182d34e": [
+      1
+    ],
+    "371d8deb": [
+      1
+    ],
+    "281594f8": [
+      1
+    ],
+    "36a00bb2": [
+      1
+    ],
+    "2b2ad1a0": [
+      1
+    ],
+    "38eec86f": [
+      1
+    ],
+    "1cab7b33": [
+      1
+    ],
+    "60959f05": [
+      1
+    ],
+    "b8dcdfc8": [
+      1
+    ],
+    "568db97a": [
+      1
+    ],
+    "218e999c": [
+      1
+    ],
+    "c7cbf6ca": [
+      1
+    ],
+    "0ea0a000": [
+      1
+    ],
+    "743021d8": [
+      1
+    ],
+    "022a1ac4": [
+      3
+    ],
+    "7b3da470": [
+      2
+    ],
+    "1921afc5": [
+      0
+    ]
+  }
+}
