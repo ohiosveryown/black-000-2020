@@ -1,0 +1,30 @@
+{
+  "name": "000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohiosveryown/black-000-2020.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "saber build",
+    "dev": "saber"
+  },
+  "dependencies": {
+    "saber": "^0.7.0",
+    "saber-plugin-query-posts": "^0.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "sass": "^1.22.9",
+    "sass-loader": "^7.1.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
