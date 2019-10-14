@@ -13,8 +13,8 @@
       <!-- left -->
       <aside>
         <header>
-          <h1 class="f-prim fs-xl uc tac f-outline">{{ page.first_name }}</h1>
-          <h1 class="f-prim fs-xl uc tac f-outline">{{ page.last_name }}</h1>
+          <h1 class="first-name f-prim fs-xl uc f-outline">{{ page.first_name }}</h1>
+          <h1 class="last-name f-prim fs-xl uc f-outline">{{ page.last_name }}</h1>
         </header>
 
         <div class="content">
@@ -24,7 +24,7 @@
 
         <!-- previous post -->
         <footer class="footer" v-if='page.prevPost'>
-          <h3 class="story f-prim fs-sm uc">
+          <h3 class="f-prim fs-sm uc">
             <router-link class="next-link" :to="page.prevPost.permalink">
               Next: {{ page.prevPost.title }}
               <svg width="23" height="20">
@@ -79,7 +79,7 @@
     word-wrap: break-word;
 
     @include breakpoint(md) {
-      margin: 11.6rem 0 6.4rem;
+      margin: 16vh 0 6.4rem;
     }
   }
 
@@ -123,8 +123,20 @@
     }
   }
 
+  .next-link {
+    padding: 1rem 0;
+    opacity: .5;
+    transition: var(--ease);
+  }
+
+  @media (pointer: fine) {
+    .next-link:hover { opacity: 1; }
+    .next-link:hover svg { transform: translate(3.2rem, .5rem); }
+  }
+
   svg {
     transform: translate(1rem, .5rem);
+    transition: var(--ease);
   }
 
 </style>

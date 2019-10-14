@@ -2,7 +2,7 @@
 layout: detail
 title: Maura Channing
 first_name: Maura
-last_name: Channing
+last_name: Channinginging
 assets:
   img: ./img/000-2.jpg
 story: |
