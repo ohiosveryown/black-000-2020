@@ -6,7 +6,6 @@
     <h2 class="story f-prim fs-md uc">their story</h2>
     <p class="f-sec">{{ quote }}</p>
 
-
   </div>
 </template>
 
@@ -19,6 +18,9 @@
   @import '../style/type.scss';
 
   .content {
+    margin: 0 auto 8rem;
+    width: 88vw;
+
     @include breakpoint(md) {
       margin-bottom: 14rem;
       margin-left: grid-width(1);
@@ -26,12 +28,7 @@
     }
   }
 
-  .story {
-    @include breakpoint(md) {
-      margin-bottom: 3.2rem;
-    }
-  }
-
+  .story { margin-bottom: 3.2rem; }
 
   p {
     font-size: 1.6rem;

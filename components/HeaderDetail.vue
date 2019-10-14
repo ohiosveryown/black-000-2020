@@ -19,7 +19,7 @@
   @import '../style/type.scss';
 
   header {
-    width: 96;
+    width: 96%;
     hyphens: auto;
     overflow-wrap: break-word;
     word-wrap: break-word;

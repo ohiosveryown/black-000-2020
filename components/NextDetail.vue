@@ -24,6 +24,8 @@
     padding: 1rem 0;
     opacity: .5;
     transition: var(--ease);
+    @include breakpoint(md)  { max-width: 92%; }
+    @include breakpoint(mdl) { max-width: inherit; }
   }
 
   @media (pointer: fine) {
