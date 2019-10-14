@@ -65,7 +65,7 @@
   }
 
   header {
-    margin: 4rem 0 6.4rem;
+    margin: 4rem 0 4.8rem;
     @include breakpoint(md) { margin: 16vh 0 6.4rem; }
    }
 
@@ -119,7 +119,6 @@
       document.documentElement.style.setProperty('--vh', `${vh}px`)
 
       window.addEventListener('resize', () => {
-        // We execute the same script as before
         let vh = window.innerHeight * 0.01
         document.documentElement.style.setProperty('--vh', `${vh}px`)
       })
