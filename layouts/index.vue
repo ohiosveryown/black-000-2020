@@ -17,6 +17,7 @@
       </ul>
     </main>
 
+    <CoverDarkest/>
 
   </div>
 </template>
@@ -41,10 +42,11 @@
 <!-- logic -->
 <script>
   import Navigation from '../components/Navigation'
+  import CoverDarkest from '../components/CoverDarkest'
 
   export default {
     props: [ 'page' ],
-    components: { Navigation, },
+    components: { Navigation, CoverDarkest, },
 
     head() {
       const pageTitle = this.page.title
@@ -60,6 +62,15 @@
           }
         ],
       }
+    },
+
+    beforeDestroy() {
+      let coverDarkest = document.querySelector('.cover-darkest')
+      coverDarkest.style.cssText = `
+        background: var(--darkest);
+        transform: scaleX(1);
+        transition: transform 1000ms var(--inout), background 1000ms ease;
+      `
     },
   }
 </script>

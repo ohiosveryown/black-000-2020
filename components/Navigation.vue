@@ -17,6 +17,7 @@
   nav {
     position: fixed;
     top: 1.6rem;
+    z-index: var(--zmax);
     display: flex;
     justify-content: center;
     width: 100vw;

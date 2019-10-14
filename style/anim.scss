@@ -1,5 +1,5 @@
 // global
-// .page-enter-active, .page-leave-active { transition: all 1000ms ease; }
+.page-enter-active, .page-leave-active { transition: all 1000ms ease; }
 
 
 // detail
@@ -21,4 +21,41 @@
 @keyframes lastName {
   from { transform: translateX(0); opacity: 0; }
   to   { transform: translateX(grid-width(1.4)); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleDown {
+  from { transform: scale(1.1); }
+  to   { transform: scale(1); }
+}
+
+.detail-fade-in {
+  opacity: 0;
+  animation: fadeIn 1400ms ease forwards 1400ms;
+}
+
+.detail-fade-in-fig {
+  opacity: 0;
+  animation:
+    fadeIn 1400ms ease forwards 500ms,
+    scaleDown 1400ms ease forwards 500ms;
+}
+
+.detail-fade-in-bg {
+  opacity: 0;
+  animation: fadeIn 300ms ease forwards 700ms;
+}
+
+.cover-enter {
+  animation: coverEnter 1600ms var(--inout) forwards;
+}
+
+@keyframes coverEnter {
+  0%   { transform: scaleX(0); }
+  50%  { transform: scaleX(1); }
+  100% { transform: scaleX(1) translateX(-100vw); }
 }

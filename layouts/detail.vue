@@ -10,18 +10,18 @@
     />
     <!-- left / right -->
     <main>
-      <aside>
+      <aside class="detail-fade-in-bg">
         <!-- name -->
-        <HeaderDetail
+        <HeaderDetail class="detail-fade-in"
           :first_name = 'page.first_name'
           :last_name = 'page.last_name'
         />
         <!-- quote / description -->
-        <QuoteDetail
+        <QuoteDetail class="detail-fade-in"
           :quote = 'page.quote'
         />
         <!-- previous post -->
-        <footer class="footer" v-if='page.prevPost'>
+        <footer class="detail-fade-in footer" v-if='page.prevPost'>
           <router-link class="next-link" :to="page.prevPost.permalink">
             <NextDetail
               :title = 'page.prevPost.title'
@@ -30,11 +30,12 @@
         </footer>
       </aside>
       <!-- right -->
-      <figure>
+      <figure class="detail-fade-in-fig">
         <img :src="page.assets.img" :alt="page.first_name + page.last_name">
       </figure>
     </main>
 
+    <div class="page-cover cover-enter"/>
 
   </div>
 </template>
@@ -46,6 +47,20 @@
   @import '../style/reset.scss';
   @import '../style/util.scss';
   @import '../style/type.scss';
+  @import '../style/anim.scss';
+
+  .page-cover {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: var(--z5);
+    width: 100vw; height: 100vh;
+    background: var(--darkest);
+    background: #efefef;
+    transform: scaleX(0);
+    transform-origin: right;
+    will-change: transform;
+  }
+
 
   main {
     display: flex;
@@ -103,7 +118,7 @@
 
   export default {
     props: [ 'page' ],
-    components: { Navigation, HeaderDetail, QuoteDetail, NextDetail },
+    components: { Navigation, HeaderDetail, QuoteDetail, NextDetail, },
 
     head() {
       const pageTitle = this.page.title
