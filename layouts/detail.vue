@@ -65,7 +65,7 @@
   }
 
   header {
-    margin: 4rem 0 4.8rem;
+    margin: 4rem 0 4rem;
     @include breakpoint(md) { margin: 16vh 0 6.4rem; }
    }
 
