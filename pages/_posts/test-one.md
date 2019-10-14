@@ -1,6 +1,6 @@
 ---
 layout: detail
-title: test one
+title: Tanya Hargrove
 first_name: Tanya
 last_name: Hargrove
 assets:
@@ -10,4 +10,4 @@ story: |
 # injectAllPosts: true
 ---
 
-# This is test one
+<!-- # This is test one -->

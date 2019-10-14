@@ -23,7 +23,7 @@
 
 
 <!-- style -->
-<style lang='scss'>
+<style lang='scss' scoped>
   @import '../style/grid.scss';
   @import '../style/reset.scss';
   @import '../style/util.scss';

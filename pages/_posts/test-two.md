@@ -1,6 +1,6 @@
 ---
 layout: detail
-title: test two
+title: Maura Channing
 first_name: Maura
 last_name: Channing
 assets:
