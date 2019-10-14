@@ -8,7 +8,7 @@ exports.onCreatePages = function() {
     })
   const selectFields = page => (page && {
     title: page.title,
-    permalink: page.permalink
+    permalink: page.permalink,
   })
   for (const [index, post] of posts.entries()) {
     post.prevPost = selectFields(posts[index - 1])

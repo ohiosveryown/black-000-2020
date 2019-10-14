@@ -3,22 +3,22 @@
 
 
 // detail
-// .first-name {
-//   opacity: 0;
-//   animation: firstName 1400ms ease forwards 300ms;
-// }
+.first-name {
+  opacity: 0;
+  animation: firstName 1400ms ease forwards 300ms;
+}
 
-// .last-name {
-//   opacity: 0;
-//   animation: lastName 1400ms ease forwards 100ms;
-// }
+.last-name {
+  opacity: 0;
+  animation: lastName 1400ms ease forwards 100ms;
+}
 
-// @keyframes firstName {
-//   from { transform: translateX(0); opacity: 0; }
-//   to   { transform: translateX(grid-width(.5)); opacity: 1; }
-// }
+@keyframes firstName {
+  from { transform: translateX(0); opacity: 0; }
+  to   { transform: translateX(grid-width(.5)); opacity: 1; }
+}
 
-// @keyframes lastName {
-//   from { transform: translateX(0); opacity: 0; }
-//   to   { transform: translateX(grid-width(1.4)); opacity: 1; }
-// }
+@keyframes lastName {
+  from { transform: translateX(0); opacity: 0; }
+  to   { transform: translateX(grid-width(1.4)); opacity: 1; }
+}
