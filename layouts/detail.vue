@@ -10,18 +10,18 @@
     />
     <!-- left / right -->
     <main>
-      <aside class="detail-fade-in-bg">
+      <aside>
         <!-- name -->
-        <HeaderDetail class="detail-fade-in"
+        <HeaderDetail
           :first_name = 'page.first_name'
           :last_name = 'page.last_name'
         />
         <!-- quote / description -->
-        <QuoteDetail class="detail-fade-in"
+        <QuoteDetail
           :quote = 'page.quote'
         />
         <!-- previous post -->
-        <footer class="detail-fade-in footer" v-if='page.prevPost'>
+        <footer class="footer" v-if='page.prevPost'>
           <router-link class="next-link" :to="page.prevPost.permalink">
             <NextDetail
               :title = 'page.prevPost.title'
@@ -30,12 +30,14 @@
         </footer>
       </aside>
       <!-- right -->
-      <figure class="detail-fade-in-fig">
-        <img :src="page.assets.img" :alt="page.first_name + page.last_name">
+      <figure>
+        <img
+          class="detail-fade-in-fig"
+          :src="page.assets.img"
+          :alt="page.first_name + page.last_name"
+        >
       </figure>
     </main>
-
-    <div class="page-cover cover-enter"/>
 
   </div>
 </template>
@@ -48,19 +50,6 @@
   @import '../style/util.scss';
   @import '../style/type.scss';
   @import '../style/anim.scss';
-
-  .page-cover {
-    position: fixed;
-    top: 0; left: 0;
-    z-index: var(--z5);
-    width: 100vw; height: 100vh;
-    background: var(--darkest);
-    background: #efefef;
-    transform: scaleX(0);
-    transform-origin: right;
-    will-change: transform;
-  }
-
 
   main {
     display: flex;
@@ -86,6 +75,7 @@
 
   figure {
     height: 64vh;
+    overflow: hidden;
     @include breakpoint(md) { width: 50%; height: inherit; }
   }
 

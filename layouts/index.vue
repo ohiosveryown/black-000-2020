@@ -63,14 +63,5 @@
         ],
       }
     },
-
-    beforeDestroy() {
-      let coverDarkest = document.querySelector('.cover-darkest')
-      coverDarkest.style.cssText = `
-        background: var(--darkest);
-        transform: scaleX(1);
-        transition: transform 1000ms var(--inout), background 1000ms ease;
-      `
-    },
   }
 </script>
