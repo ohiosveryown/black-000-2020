@@ -101,6 +101,7 @@
 
 <!-- logic -->
 <script>
+  import { staticLogic } from '../logic/for-detail'
   import Navigation from '../components/Navigation'
   import HeaderDetail from '../components/HeaderDetail'
   import QuoteDetail from '../components/QuoteDetail'
@@ -120,13 +121,7 @@
     },
 
     mounted() {
-      let vh = window.innerHeight * 0.01
-      document.documentElement.style.setProperty('--vh', `${vh}px`)
-
-      window.addEventListener('resize', () => {
-        let vh = window.innerHeight * 0.01
-        document.documentElement.style.setProperty('--vh', `${vh}px`)
-      })
+      staticLogic()
     },
   }
 </script>

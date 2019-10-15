@@ -21,7 +21,7 @@
 .fs-xl {
   font-size: 8vw;
   line-height: 1;
-  @include breakpoint(md) { font-size: 4vw; }
+  @include breakpoint(md) { font-size: 3.8vw; }
 }
 
 .fs-md { font-size: 1.6rem; }

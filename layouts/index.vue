@@ -12,7 +12,10 @@
     <main>
       <ul>
         <li v-for="post in page.posts" :key="post.permalink">
-          <saber-link :to='post.permalink'>{{ post.title }}</saber-link>
+          <Carousel
+            :img = 'post.assets.img'
+            :link = 'post.permalink'
+          />
         </li>
       </ul>
     </main>
@@ -43,10 +46,11 @@
 <script>
   import Navigation from '../components/Navigation'
   import CoverDarkest from '../components/CoverDarkest'
+  import Carousel from '../components/Carousel'
 
   export default {
     props: [ 'page' ],
-    components: { Navigation, CoverDarkest, },
+    components: { Navigation, CoverDarkest, Carousel },
 
     head() {
       const pageTitle = this.page.title
