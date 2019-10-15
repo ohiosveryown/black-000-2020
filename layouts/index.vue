@@ -38,6 +38,8 @@
     position: relative;
     width: 100vw;
     overflow: hidden;
+    &.is-draggable { cursor: move; cursor: grab; }
+    &.is-dragging { cursor: grabbing; }
   }
 
   ul {
