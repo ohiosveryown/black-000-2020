@@ -37,6 +37,7 @@
   .carousel-wrapper {
     position: relative;
     width: 100vw;
+    overflow: hidden;
   }
 
   ul {
