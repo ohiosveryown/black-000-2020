@@ -13,6 +13,7 @@
     "dev": "saber"
   },
   "dependencies": {
+    "embla-carousel": "^2.5.2",
     "saber": "^0.7.0",
     "saber-plugin-query-posts": "^0.4.0"
   },

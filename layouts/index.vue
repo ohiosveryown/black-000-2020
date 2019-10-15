@@ -9,7 +9,7 @@
     />
 
     <!-- main -->
-    <main>
+    <main class="carousel-wrapper">
       <ul>
         <li v-for="post in page.posts" :key="post.permalink">
           <Carousel
@@ -34,16 +34,28 @@
   @import '../style/type.scss';
   @import '../style/anim.scss';
 
+  .carousel-wrapper {
+    position: relative;
+    width: 100vw;
+  }
+
   ul {
     display: flex;
-    flex-direction: column;
+    width: 100%;
     color: var(--cloud);
   }
+
+  li {
+    position: relative;
+    flex: 0 0 33.333%;
+  }
+
 </style>
 
 
 <!-- logic -->
 <script>
+  import EmblaCarousel from 'embla-carousel'
   import Navigation from '../components/Navigation'
   import CoverDarkest from '../components/CoverDarkest'
   import Carousel from '../components/Carousel'
@@ -66,6 +78,20 @@
           }
         ],
       }
+    },
+
+    mounted() {
+      // carousel
+      const emblaNode = document.querySelector('.carousel-wrapper')
+      const embla = EmblaCarousel(emblaNode, {
+        align: 'start',
+        loop: true,
+        speed: 10,
+        startIndex: 0,
+        selectedClass: 'is-selected',
+        draggableClass: 'is-draggable',
+        draggingClass: 'is-dragging',
+      })
     },
   }
 </script>
