@@ -15,6 +15,7 @@
           <Carousel
             :img = 'post.assets.img'
             :link = 'post.permalink'
+            :title = 'post.title'
           />
         </li>
       </ul>
@@ -40,6 +41,10 @@
     overflow: hidden;
     &.is-draggable { cursor: move; cursor: grab; }
     &.is-dragging { cursor: grabbing; }
+  }
+
+  .is-draggable ~ img {
+    transform: translateY(-5vh);
   }
 
   ul {
