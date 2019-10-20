@@ -1,5 +1,6 @@
 ---
 layout: detail
+id: '02'
 title: Maura Channing
 first_name: Maura
 last_name: Channing

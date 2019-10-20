@@ -1,6 +1,6 @@
 <!-- layout -->
 <template>
-  <nav class="f-prim fs-sm uc">
+  <nav class="f-prim fs-xs uc">
     <saber-link class="link" :to='link'>{{ title }}</saber-link>
   </nav>
 </template>

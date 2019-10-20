@@ -14,6 +14,7 @@
   .button--primary {
     margin: 0 auto;
     padding: 1.6rem;
+    transition: var(--ease);
   }
 
 </style>

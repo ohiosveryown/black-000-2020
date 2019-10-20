@@ -15,12 +15,15 @@
           <Carousel
             :img = 'post.assets.img'
             :link = 'post.permalink'
-            :title = 'post.title'
+            :first_name = 'post.first_name'
+            :last_name = 'post.last_name'
+            :id = 'post.id'
           />
         </li>
       </ul>
     </main>
 
+    <FooterIndex/>
     <CoverDarkest/>
 
   </div>
@@ -67,10 +70,11 @@
   import Navigation from '../components/Navigation'
   import CoverDarkest from '../components/CoverDarkest'
   import Carousel from '../components/Carousel'
+  import FooterIndex from '../components/FooterIndex'
 
   export default {
     props: [ 'page' ],
-    components: { Navigation, CoverDarkest, Carousel },
+    components: { Navigation, CoverDarkest, Carousel, FooterIndex, },
 
     head() {
       const pageTitle = this.page.title
@@ -100,6 +104,9 @@
         draggableClass: 'is-draggable',
         draggingClass: 'is-dragging',
       })
+      // next button
+      const buttonNext = document.querySelector('.button--next')
+      buttonNext.addEventListener('click', embla.scrollNext, false)
     },
   }
 </script>

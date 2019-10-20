@@ -1,5 +1,6 @@
 ---
 layout: detail
+id: '01'
 title: Tanya Hargrove
 first_name: Tanya
 last_name: Hargrove

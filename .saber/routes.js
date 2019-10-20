@@ -1,6 +1,18 @@
 
     export default [
       {
+              path: "/posts/test-four.html",
+              meta: {
+                __relative: '_posts/test-four.md',
+                __pageId: '69376bf2'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-test-four-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/test-four.md?saberPage=69376bf2")
+                
+              }
+            },
+{
               path: "/posts/test-one.html",
               meta: {
                 __relative: '_posts/test-one.md',
@@ -9,6 +21,18 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--_posts-test-one-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/test-one.md?saberPage=fda08312")
+                
+              }
+            },
+{
+              path: "/posts/test-three.html",
+              meta: {
+                __relative: '_posts/test-three.md',
+                __pageId: '5127b382'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-test-three-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/test-three.md?saberPage=5127b382")
                 
               }
             },
@@ -33,30 +57,6 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--index-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/index.md?saberPage=26bb90aa")
-                
-              }
-            },
-{
-              path: "/posts/test-three.html",
-              meta: {
-                __relative: '_posts/test-three.md',
-                __pageId: '5127b382'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--_posts-test-three-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/test-three.md?saberPage=5127b382")
-                
-              }
-            },
-{
-              path: "/posts/test-four.html",
-              meta: {
-                __relative: '_posts/test-four.md',
-                __pageId: '69376bf2'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--_posts-test-four-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/test-four.md?saberPage=69376bf2")
                 
               }
             },
