@@ -43,6 +43,9 @@
     &.is-dragging { cursor: grabbing; }
   }
 
+  .is-draggable ~ img {
+    transform: translateY(-5vh);
+  }
 
   ul {
     display: flex;
