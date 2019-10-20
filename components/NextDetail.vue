@@ -1,6 +1,6 @@
 <!-- layout -->
 <template>
-  <h3 class="f-prim fs-sm uc">
+  <h3 class="f-prim uc">
 
 
       Next: {{ title }}
@@ -21,10 +21,11 @@
   @import '../style/type.scss';
 
   h3 {
+    font-size: 1.2rem;
     padding: 1rem 0;
     opacity: .5;
     transition: var(--ease);
-    @include breakpoint(md)  { max-width: 92%; }
+    @include breakpoint(md)  { max-width: 92%; font-size: 1.4rem; }
     @include breakpoint(mdl) { max-width: inherit; }
   }
 

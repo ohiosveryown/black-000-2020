@@ -60,7 +60,7 @@
   button {
     position: absolute;
     @include breakpoint(md) {
-      right: 0; bottom: 8.8rem; left: 0;
+      right: 0; bottom: 9.6rem; left: 0;
       width: 44%;
     }
   }
