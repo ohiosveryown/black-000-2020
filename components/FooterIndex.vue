@@ -22,15 +22,11 @@
 
   .footer {
     position: absolute;
-    right: 0; left: 0;
+    right: 0; bottom: 2rem; left: 0;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @include breakpoint(md) {
-      bottom: 2rem;
-      padding: 0 2rem;
-    }
   }
 
   h2 { font-size: 1rem; }
@@ -40,11 +36,7 @@
     transform: scale(.8);
   }
 
-  @media (max-height: 48rem) {
-    .footer {
-      display: none;
-    }
-  }
+  @media (max-height: 48rem) { .footer { display: none; }}
 
 </style>
 

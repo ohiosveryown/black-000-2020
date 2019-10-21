@@ -58,7 +58,9 @@
 
   li {
     position: relative;
-    flex: 0 0 33.333%;
+    flex: 0 0 100%;
+    @include breakpoint(md) { flex: 0 0 50%; }
+    @include breakpoint(mdl) { flex: 0 0 33.333%; }
   }
 
 </style>

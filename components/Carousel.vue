@@ -11,7 +11,7 @@
         />
       </saber-link>
 
-      <figcaption class="mt-2">
+      <figcaption class="mt-2 mb-2">
         <span class="f-prim fs-xs uc">{{ first_name }}</span>
         <span class="mb-1 f-prim fs-xs uc">{{ last_name }}</span>
         <span class="f-sec fs-sm">{{ id }}</span>
@@ -35,10 +35,6 @@
   @media (pointer: fine) { button { opacity: 0; }}
   @media (pointer: coarse) { button { opacity: 1; }}
 
-  span {
-    display: block;
-  }
-
   figure {
     position: relative;
     overflow: hidden;
@@ -47,22 +43,19 @@
 
   img {
     transition: var(--ease);
-    @include breakpoint(md) {
-      width: 100%; height: 76vh;
-      object-fit: cover;
-    }
+    width: 100%; height: 68vh;
+    object-fit: cover;
+    @include breakpoint(md) { height: 76vh; }
   }
 
-  figcaption {
-    margin-left: 2rem;
-  }
+  figcaption { margin-left: 2rem; }
+  span { display: block; }
 
   button {
     position: absolute;
-    @include breakpoint(md) {
-      right: 0; bottom: 9.6rem; left: 0;
-      width: 44%;
-    }
+    right: 0; bottom: 11.2rem; left: 0;
+    width: 44%;
+    @include breakpoint(md) { bottom: 9.6rem; }
   }
 
 </style>
