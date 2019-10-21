@@ -22,11 +22,12 @@
 
   .footer {
     position: absolute;
-    right: 0; bottom: 2rem; left: 0;
+    right: 0; bottom: 1.2rem; left: 0;
     padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include breakpoint(md) { bottom: 2rem; }
   }
 
   h2 { font-size: 1rem; }
