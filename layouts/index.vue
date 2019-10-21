@@ -9,7 +9,7 @@
     />
 
     <!-- main -->
-    <main class="carousel-wrapper">
+    <main class="carousel-wrapper" v-if="page.posts">
       <ul>
         <li v-for="post in page.posts" :key="post.permalink">
           <Carousel
