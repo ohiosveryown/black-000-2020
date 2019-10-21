@@ -1,6 +1,42 @@
 
     export default [
       {
+              path: "/posts/d-01.html",
+              meta: {
+                __relative: '_posts/d-01.md',
+                __pageId: '076f5f38'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-d-01-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-01.md?saberPage=076f5f38")
+                
+              }
+            },
+{
+              path: "/posts/d-02.html",
+              meta: {
+                __relative: '_posts/d-02.md',
+                __pageId: '076fd397'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-d-02-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-02.md?saberPage=076fd397")
+                
+              }
+            },
+{
+              path: "/posts/d-03.html",
+              meta: {
+                __relative: '_posts/d-03.md',
+                __pageId: '077047f6'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-d-03-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-03.md?saberPage=077047f6")
+                
+              }
+            },
+{
               path: "/",
               meta: {
                 __relative: 'index.md',
@@ -13,50 +49,14 @@
               }
             },
 {
-              path: "/posts/delete-one.html",
+              path: "/posts/d-04.html",
               meta: {
-                __relative: '_posts/delete-one.md',
-                __pageId: '5fc703fe'
+                __relative: '_posts/d-04.md',
+                __pageId: '0770bc55'
               },
               component: function() {
                 
-                return import(/* webpackChunkName: "page--_posts-delete-one-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/delete-one.md?saberPage=5fc703fe")
-                
-              }
-            },
-{
-              path: "/posts/delete-two.html",
-              meta: {
-                __relative: '_posts/delete-two.md',
-                __pageId: '68d29e58'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--_posts-delete-two-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/delete-two.md?saberPage=68d29e58")
-                
-              }
-            },
-{
-              path: "/posts/delete-three.html",
-              meta: {
-                __relative: '_posts/delete-three.md',
-                __pageId: '6d482606'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--_posts-delete-three-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/delete-three.md?saberPage=6d482606")
-                
-              }
-            },
-{
-              path: "/posts/delete-four.html",
-              meta: {
-                __relative: '_posts/delete-four.md',
-                __pageId: '80949540'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--_posts-delete-four-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/delete-four.md?saberPage=80949540")
+                return import(/* webpackChunkName: "page--_posts-d-04-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-04.md?saberPage=0770bc55")
                 
               }
             },
