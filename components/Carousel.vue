@@ -55,7 +55,7 @@
     position: absolute;
     right: 0; bottom: 11.2rem; left: 0;
     width: 44%;
-    @include breakpoint(md) { bottom: 9.6rem; }
+    @include breakpoint(md) { bottom: 10.4rem; }
   }
 
 </style>
