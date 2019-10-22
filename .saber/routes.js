@@ -37,18 +37,6 @@
               }
             },
 {
-              path: "/",
-              meta: {
-                __relative: 'index.md',
-                __pageId: '26bb90aa'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--index-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/index.md?saberPage=26bb90aa")
-                
-              }
-            },
-{
               path: "/posts/d-04.html",
               meta: {
                 __relative: '_posts/d-04.md',
@@ -57,6 +45,18 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--_posts-d-04-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-04.md?saberPage=0770bc55")
+                
+              }
+            },
+{
+              path: "/",
+              meta: {
+                __relative: 'index.md',
+                __pageId: '26bb90aa'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--index-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/index.md?saberPage=26bb90aa")
                 
               }
             },
