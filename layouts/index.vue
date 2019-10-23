@@ -2,6 +2,9 @@
 <template>
   <div class="index-wrapper">
 
+    <!-- cursor halo -->
+    <CursorHalo/>
+
     <!-- nav -->
     <Navigation
       title = 'Info'
@@ -65,6 +68,7 @@
 <!-- logic -->
 <script>
   import EmblaCarousel from 'embla-carousel'
+  import CursorHalo from '../components/CursorHalo'
   import Navigation from '../components/Navigation'
   import CoverDarkest from '../components/CoverDarkest'
   import Carousel from '../components/Carousel'
@@ -72,7 +76,7 @@
 
   export default {
     props: [ 'page' ],
-    components: { Navigation, CoverDarkest, Carousel, FooterIndex, },
+    components: { CursorHalo, Navigation, CoverDarkest, Carousel, FooterIndex, },
 
     head() {
       const pageTitle = this.page.title

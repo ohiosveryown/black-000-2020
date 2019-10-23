@@ -1,7 +1,9 @@
 <!-- layout -->
 <template>
-  <nav class="f-prim fs-xs uc">
-    <saber-link class="link" :to='link'>{{ title }}</saber-link>
+  <nav>
+    <saber-link :to='link'>
+      <button class="link f-prim fs-xs uc">{{ title }}</button>
+    </saber-link>
   </nav>
 </template>
 
@@ -17,7 +19,7 @@
   nav {
     position: fixed;
     top: 1.6rem;
-    z-index: var(--zmax);
+    z-index: var(--z5);
     display: flex;
     justify-content: center;
     width: 100vw;
