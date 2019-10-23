@@ -3,7 +3,9 @@
   <article>
 
     <figure>
-      <img :src="img" alt="">
+      <div class="img-wrapper">
+        <img :src="img" alt="">
+      </div>
       <saber-link :to='link'>
         <ButtonPrimary
           label = 'view'
@@ -39,6 +41,10 @@
     position: relative;
     overflow: hidden;
     &:hover { button { opacity: 1; }}
+  }
+
+  .img-wrapper {
+    overflow: hidden;
   }
 
   img {
