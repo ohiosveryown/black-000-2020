@@ -14,23 +14,19 @@
   @import '../style/grid.scss';
 
   .halo {
-    display: none;
     position: absolute;
     top: 0; left: 0;
-    z-index: var(--zmax);
+    z-index: var(--zmin);
     pointer-events: none;
     border: 1px solid var(--gold);
     background: none;
     will-change: transform;
-    opacity: 0;
     animation: enter 2000ms ease 1000ms forwards;
-
-    @include breakpoint(mdl) { display: inherit; }
   }
 
   @keyframes enter {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { z-index: var(--zmin); }
+    to   { z-index: var(--zmax); }
   }
 
   svg { fill: var(--gold); transition: all 400ms ease; }
@@ -49,6 +45,9 @@
   .scale-down { border: 2px solid var(--gold); }
   .left-focus { transform: translateX(-2.4rem); }
   .right-focus { transform: scaleX(-1) translateX(-2.4rem); }
+
+  @media (pointer: fine) { .halo { display: none; }}
+  @media (pointer: coarse) { .halo { display: inherit; }}
 
 </style>
 
@@ -92,14 +91,6 @@
         mouseX = e.pageX
         mouseY = e.pageY
       })
-
-      // ul.addEventListener('mouseover', () => {
-      //   halo.style.opacity = .64
-      // })
-
-      // ul.addEventListener('mouseout', () => {
-      //   halo.style.opacity = 0
-      // })
 
       ul.addEventListener('mousedown', () => {
         halo.classList.add('scale-down')

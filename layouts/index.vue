@@ -3,7 +3,9 @@
   <div class="index-wrapper">
 
     <!-- cursor halo -->
-    <CursorHalo/>
+    <CursorHalo
+      class="cursor"
+    />
 
     <!-- nav -->
     <Navigation
@@ -109,6 +111,26 @@
       // next button
       const buttonNext = document.querySelector('.button--next')
       buttonNext.addEventListener('click', embla.scrollNext, false)
+      // halo cursor
+      const buttons = document.querySelectorAll('button')
+      const halo = document.querySelector('.halo')
+      const ul = document.querySelector('ul')
+      // halo list hover in / out
+      ul.addEventListener('mouseover', () => { halo.style.opacity = 1 })
+      ul.addEventListener('mouseout', () => { halo.style.opacity = 0 })
+      // halo buttons hover in
+      buttons.forEach((currentBtn) => {
+        currentBtn.addEventListener('mouseenter', () => {
+          halo.style.opacity = 0
+          halo.style.transition = 'opacity 500ms ease'
+        })
+      })
+      // halo buttons hover out
+      buttons.forEach((currentBtn) => {
+        currentBtn.addEventListener('mouseleave', () => {
+          halo.style.opacity = 1
+        })
+      })
     },
   }
 </script>
