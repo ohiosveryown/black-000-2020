@@ -46,8 +46,8 @@
   .left-focus { transform: translateX(-2.4rem); }
   .right-focus { transform: scaleX(-1) translateX(-2.4rem); }
 
-  @media (pointer: fine) { .halo { display: none; }}
-  @media (pointer: coarse) { .halo { display: inherit; }}
+  @media (pointer: coarse) { .halo { display: none; }}
+  @media (pointer: fine) { .halo { display: inherit; }}
 
 </style>
 
