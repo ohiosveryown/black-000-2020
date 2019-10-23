@@ -45,7 +45,7 @@
 
   .carousel-wrapper {
     position: relative;
-    width: 100vw;
+    max-width: 100vw; width: 100vw;
     overflow: hidden;
     &.is-draggable { cursor: move; cursor: grab; }
     &.is-dragging { cursor: grabbing; }
@@ -62,6 +62,7 @@
     flex: 0 0 100%;
     @include breakpoint(md) { flex: 0 0 50%; }
     @include breakpoint(mdl) { flex: 0 0 33.333%; }
+    @include breakpoint(lg) { flex: 0 0 25%; }
   }
 
 </style>
