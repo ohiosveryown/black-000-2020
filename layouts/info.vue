@@ -12,6 +12,8 @@
     />
 
     <main class="width">
+      <h3 class="black f-prim">#000000</h3>
+
       <section class="intro">
         <header class="f-prim uc">
           <h1>black</h1>
@@ -78,6 +80,15 @@
   a { text-decoration: underline; }
   ul { display: flex; flex-direction: column; }
   li { margin-bottom: .8rem; font-size: 1.5rem; }
+
+  .black {
+    display: none;
+    position: fixed;
+    top: 44%;
+    right: 0;
+    transform: rotate(90deg);
+    @include breakpoint(md) { display: inherit; }
+  }
 
   .intro {
     position: relative;
