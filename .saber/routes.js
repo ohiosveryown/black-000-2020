@@ -72,6 +72,18 @@
                 
               }
             },
+{
+              path: "/info.html",
+              meta: {
+                __relative: 'info.md',
+                __pageId: '1845f05f'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--info-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/info.md?saberPage=1845f05f")
+                
+              }
+            },
       
       // An addtional route to catch all other requests, i.e. 404 page
       {

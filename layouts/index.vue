@@ -3,14 +3,12 @@
   <div class="index-wrapper">
 
     <!-- cursor halo -->
-    <CursorHalo
-      class="cursor"
-    />
+    <HaloIndex/>
 
     <!-- nav -->
     <Navigation
       title = 'Info'
-      link = '/posts/test-two.html'
+      link = '/info.html'
     />
 
     <!-- main -->
@@ -71,7 +69,7 @@
 <!-- logic -->
 <script>
   import EmblaCarousel from 'embla-carousel'
-  import CursorHalo from '../components/CursorHalo'
+  import HaloIndex from '../components/HaloIndex'
   import Navigation from '../components/Navigation'
   import CoverDarkest from '../components/CoverDarkest'
   import Carousel from '../components/Carousel'
@@ -79,7 +77,7 @@
 
   export default {
     props: [ 'page' ],
-    components: { CursorHalo, Navigation, CoverDarkest, Carousel, FooterIndex, },
+    components: { HaloIndex, Navigation, CoverDarkest, Carousel, FooterIndex, },
 
     head() {
       const pageTitle = this.page.title

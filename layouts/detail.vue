@@ -2,6 +2,8 @@
 <template>
   <div class="detail-wrapper">
 
+    <!-- cursor halo -->
+    <Halo/>
 
     <!-- nav -->
     <Navigation
@@ -102,6 +104,7 @@
 <!-- logic -->
 <script>
   import { staticLogic } from '../logic/for-detail'
+  import Halo from '../components/Halo'
   import Navigation from '../components/Navigation'
   import HeaderDetail from '../components/HeaderDetail'
   import QuoteDetail from '../components/QuoteDetail'
@@ -109,7 +112,7 @@
 
   export default {
     props: [ 'page' ],
-    components: { Navigation, HeaderDetail, QuoteDetail, NextDetail, },
+    components: { Halo, Navigation, HeaderDetail, QuoteDetail, NextDetail, },
 
     head() {
       const pageTitle = this.page.title
@@ -122,6 +125,22 @@
 
     mounted() {
       staticLogic()
+      // halo cursor
+      const buttons = document.querySelectorAll('button')
+      const halo = document.querySelector('.halo')
+      // halo buttons hover in
+      buttons.forEach((currentBtn) => {
+        currentBtn.addEventListener('mouseenter', () => {
+          halo.style.opacity = 0
+          halo.style.transition = 'opacity 500ms ease'
+        })
+      })
+      // halo buttons hover out
+      buttons.forEach((currentBtn) => {
+        currentBtn.addEventListener('mouseleave', () => {
+          halo.style.opacity = 1
+        })
+      })
     },
   }
 </script>

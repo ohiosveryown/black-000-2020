@@ -13,4 +13,8 @@ var layouts = {}
       layouts["detail"] = layout_2
       
 
+      import layout_3 from "/Users/pence/Desktop/projects/black-000/black-000-2020/layouts/info.vue"
+      layouts["info"] = layout_3
+      
+
     export default layouts
