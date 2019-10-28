@@ -35,7 +35,8 @@
             <li>Tisha Ollison</li>
             <li>Amy Oum</li>
           </ul> -->
-          {{ page.models }}
+          <h2 class="f-prim uc">Models</h2>
+          <slot class="f-sec"></slot>
         </aside>
 
         <article>
@@ -157,14 +158,18 @@
     position: relative;
     margin-bottom: 7.2rem;
     padding: 8rem 0 16rem;
+
     aside {
       display: none;
       @include breakpoint(md) {
-        display: inherit;
+        display: flex;
+        flex-direction: column;
         margin-top: 40rem;
+        width: grid-width(3);
         /* transform: translateX(3.2rem); */
       }
     }
+
     article {
       @include breakpoint(md) {
         margin-left: grid-width(5);
