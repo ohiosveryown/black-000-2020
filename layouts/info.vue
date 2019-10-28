@@ -3,7 +3,7 @@
   <div class="info-wrapper cloud">
 
     <!-- cursor halo -->
-    <Halo/>
+    <!-- <Halo/> -->
 
     <!-- nav -->
     <Navigation
@@ -23,20 +23,8 @@
 
       <section class="about">
         <aside class="f-sec">
-          <!-- <ul class="f-sec">
-            <h2 class="f-prim uc">Models</h2>
-            <li>Maura Chanz</li>
-            <li>Kaira Fern</li>
-            <li>Alannah Felix</li>
-            <li>Melanie Fisher</li>
-            <li>Tanya Hargrove</li>
-            <li>Daphne Jacobs</li>
-            <li>Ryann McClure</li>
-            <li>Tisha Ollison</li>
-            <li>Amy Oum</li>
-          </ul> -->
           <h2 class="f-prim uc">Models</h2>
-          <slot class="f-sec"></slot>
+          <slot class="f-sec"/>
         </aside>
 
         <article>
@@ -233,25 +221,6 @@
           }
         ],
       }
-    },
-
-    mounted() {
-      // halo cursor
-      const buttons = document.querySelectorAll('button')
-      const halo = document.querySelector('.halo')
-      // halo buttons hover in
-      buttons.forEach((currentBtn) => {
-        currentBtn.addEventListener('mouseenter', () => {
-          halo.style.opacity = 0
-          halo.style.transition = 'opacity 500ms ease'
-        })
-      })
-      // halo buttons hover out
-      buttons.forEach((currentBtn) => {
-        currentBtn.addEventListener('mouseleave', () => {
-          halo.style.opacity = 1
-        })
-      })
     },
   }
 </script>
