@@ -12,7 +12,7 @@
     />
 
     <main class="width">
-      <h3 class="black f-prim">#000</h3>
+      <h3 class="black f-prim">#000000</h3>
 
       <section class="intro">
         <header class="f-prim uc">
@@ -22,8 +22,8 @@
       </section>
 
       <section class="about">
-        <aside>
-          <ul class="f-sec">
+        <aside class="f-sec">
+          <!-- <ul class="f-sec">
             <h2 class="f-prim uc">Models</h2>
             <li>Maura Chanz</li>
             <li>Kaira Fern</li>
@@ -34,13 +34,14 @@
             <li>Ryann McClure</li>
             <li>Tisha Ollison</li>
             <li>Amy Oum</li>
-          </ul>
+          </ul> -->
+          {{ page.models }}
         </aside>
 
         <article>
           <h2 class="f-prim uc">About</h2>
-          <p class="f-sec taj">“#000”, or BLACK, is a collection of photos curated to express the cultural appreciation of the women owning their true self through their hair. Each woman presented in this series opened up about their hair journey exuding love and passion through each loop and coiled-strand as they worked toward a healthy relationship and understanding of their hair.</p>
-          <p class="f-sec taj">Throughout the project, 'versatility' is presented from many of the women and reflects my vision as to bring inspiration to those who are figuring out their path.</p>
+          <p class="f-sec taj">{{ page.paragraph_one }}</p>
+          <p class="f-sec taj">{{ page.paragraph_two }}</p>
         </article>
       </section>
 
@@ -80,6 +81,10 @@
   a { text-decoration: underline; }
   ul { display: flex; flex-direction: column; }
   li { margin-bottom: .8rem; font-size: 1.5rem; }
+
+  .info-wrapper {
+    overflow-x: hidden;
+  }
 
   .black {
     display: none;
