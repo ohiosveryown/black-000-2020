@@ -12,7 +12,7 @@
     />
 
     <main class="width">
-      <h3 class="black f-prim">#000000</h3>
+      <h3 class="black f-prim">#000</h3>
 
       <section class="intro">
         <header class="f-prim uc">
