@@ -14,12 +14,12 @@
 }
 
 @keyframes firstName {
-  from { transform: translateX(0); opacity: 0; }
+  from { transform: translateX(grid-width(2)); opacity: 0; }
   to   { transform: translateX(grid-width(.5)); opacity: 1; }
 }
 
 @keyframes lastName {
-  from { transform: translateX(0); opacity: 0; }
+  from { transform: translateX(grid-width(2)); opacity: 0; }
   to   { transform: translateX(grid-width(1.4)); opacity: 1; }
 }
 
@@ -71,4 +71,14 @@
   0%   { transform: scaleX(1); }
   99%  { transform: scaleX(.5); }
   100% { transform: scaleX(0); }
+}
+
+@keyframes detailLeave {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }

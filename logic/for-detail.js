@@ -15,5 +15,18 @@ const staticLogic = () => {
   `
 }
 
+
+const toDetail = () => {
+  const cover = document.querySelector('.cover')
+  const asideContent = document.querySelector('.aside-content')
+
+  cover.style.cssText = `
+    animation: detailLeave var(--animbase) forwards var(--inout);
+  `
+  asideContent.style.cssText = `
+    animation: fadeOut 300ms forwards ease;
+  `
+}
+
 // exports
-export { staticLogic, }
+export { staticLogic, toDetail }

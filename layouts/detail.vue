@@ -13,23 +13,25 @@
     <!-- left / right -->
     <main>
       <aside>
-        <!-- name -->
-        <HeaderDetail class="detail-fade-in"
-          :first_name = 'page.first_name'
-          :last_name = 'page.last_name'
-        />
-        <!-- quote / description -->
-        <QuoteDetail class="detail-fade-in"
-          :quote = 'page.quote'
-        />
-        <!-- previous post -->
-        <footer class="footer detail-fade-in" v-if='page.prevPost'>
-          <router-link class="next-link" :to="page.prevPost.permalink">
-            <NextDetail
-              :title = 'page.prevPost.title'
-            />
-          </router-link>
-        </footer>
+        <div class="aside-content">
+          <!-- name -->
+          <HeaderDetail class="detail-fade-in"
+            :first_name = 'page.first_name'
+            :last_name = 'page.last_name'
+          />
+          <!-- quote / description -->
+          <QuoteDetail class="detail-fade-in"
+            :quote = 'page.quote'
+          />
+          <!-- previous post -->
+          <footer class="footer detail-fade-in" v-if='page.prevPost'>
+            <router-link class="next-link" :to="page.prevPost.permalink">
+              <NextDetail
+                :title = 'page.prevPost.title'
+              />
+            </router-link>
+          </footer>
+        </div>
       </aside>
       <!-- right -->
       <figure>
@@ -105,7 +107,7 @@
 
 <!-- logic -->
 <script>
-  import { staticLogic } from '../logic/for-detail'
+  import { staticLogic, toDetail } from '../logic/for-detail'
   import Halo from '../components/Halo'
   import Navigation from '../components/Navigation'
   import HeaderDetail from '../components/HeaderDetail'
@@ -128,6 +130,14 @@
 
     mounted() {
       staticLogic()
+    },
+
+    beforeDestroy() {
+      if ( this.$route.path === '/' ) {
+
+      } else {
+        toDetail()
+      }
     },
   }
 </script>

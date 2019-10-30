@@ -1,12 +1,12 @@
 <!-- layout -->
 <template>
-  <div class="content">
+  <section class="content">
 
 
     <h2 class="story f-prim fs-md uc">their story</h2>
     <p class="f-sec">{{ quote }}</p>
 
-  </div>
+  </section>
 </template>
 
 
