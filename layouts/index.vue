@@ -27,7 +27,7 @@
     </main>
 
     <FooterIndex/>
-    <CoverDarkest/>
+    <IndexCover/>
 
   </div>
 </template>
@@ -72,13 +72,13 @@
   import EmblaCarousel from 'embla-carousel'
   import HaloIndex from '../components/HaloIndex'
   import Navigation from '../components/Navigation'
-  import CoverDarkest from '../components/CoverDarkest'
+  import IndexCover from '../components/IndexCover'
   import Carousel from '../components/Carousel'
   import FooterIndex from '../components/FooterIndex'
 
   export default {
     props: [ 'page' ],
-    components: { HaloIndex, Navigation, CoverDarkest, Carousel, FooterIndex, },
+    components: { HaloIndex, Navigation, IndexCover, Carousel, FooterIndex, },
 
     head() {
       const pageTitle = this.page.title

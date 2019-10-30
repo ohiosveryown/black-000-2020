@@ -3,12 +3,11 @@ const staticLogic = () => {
 }
 
 const leaveLogic = () => {
-  const cover = document.querySelector('.cover-darkest')
+  const cover = document.querySelector('.cover')
 
   cover.style.cssText = `
     transform: scaleX(1);
-    background: green;
-    transition: all 500ms ease;
+    transition: all var(--animbase) var(--inout);
   `
 }
 

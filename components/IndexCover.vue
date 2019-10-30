@@ -1,6 +1,6 @@
 <!-- layout -->
 <template>
-  <div class="cover-darkest"/>
+  <div class="cover"/>
 </template>
 
 
@@ -11,13 +11,14 @@
   @import '../style/util.scss';
   @import '../style/type.scss';
 
-  .cover-darkest {
+  .cover {
     position: fixed;
     top: 0; left: 0;
     z-index: var(--z5);
     width: 100vw; height: 100vh;
-    background: var(--darkest);
-    background: #121111;
+    // background: var(--darkest);
+    // background: #121111;
+    background: var(--grey);
     transform: scaleX(0);
     transform-origin: right;
     will-change: transform;

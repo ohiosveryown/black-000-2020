@@ -1,16 +1,16 @@
 // global
-.page-enter-active, .page-leave-active { transition: all 1000ms ease; }
+.page-enter-active, .page-leave-active { transition: all var(--animbase) ease; }
 
 
 // detail
 .first-name {
   opacity: 0;
-  animation: firstName 1400ms ease forwards 300ms;
+  animation: firstName 1400ms ease forwards var(--animbase);
 }
 
 .last-name {
   opacity: 0;
-  animation: lastName 1400ms ease forwards 100ms;
+  animation: lastName 1400ms ease forwards var(--animbase);
 }
 
 @keyframes firstName {
@@ -40,7 +40,7 @@
 
 .detail-fade-in {
   opacity: 0;
-  animation: fadeIn 1400ms ease forwards 1400ms;
+  animation: fadeIn 1400ms ease forwards var(--animbase);
 }
 
 .detail-fade-in-fig {
@@ -63,4 +63,12 @@
   0%   { transform: scaleX(0); }
   50%  { transform: scaleX(1); }
   100% { transform: scaleX(1) translateX(-100vw); }
+}
+
+@keyframes scaleLeft {
+  // from { transform: scaleX(1); }
+  // to   { transform: scaleX(0); }
+  0%   { transform: scaleX(1); }
+  99%  { transform: scaleX(.5); }
+  100% { transform: scaleX(0); }
 }

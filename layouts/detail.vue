@@ -14,16 +14,16 @@
     <main>
       <aside>
         <!-- name -->
-        <HeaderDetail
+        <HeaderDetail class="detail-fade-in"
           :first_name = 'page.first_name'
           :last_name = 'page.last_name'
         />
         <!-- quote / description -->
-        <QuoteDetail
+        <QuoteDetail class="detail-fade-in"
           :quote = 'page.quote'
         />
         <!-- previous post -->
-        <footer class="footer" v-if='page.prevPost'>
+        <footer class="footer detail-fade-in" v-if='page.prevPost'>
           <router-link class="next-link" :to="page.prevPost.permalink">
             <NextDetail
               :title = 'page.prevPost.title'
@@ -40,6 +40,8 @@
         >
       </figure>
     </main>
+
+    <DetailCover/>
 
   </div>
 </template>
@@ -65,7 +67,7 @@
   }
 
   aside {
-    background: #efefef;
+    background: var(--grey);
     overflow-x: hidden;
     @include breakpoint(md) { width: 50%; height: 100%; }
   }
@@ -109,10 +111,11 @@
   import HeaderDetail from '../components/HeaderDetail'
   import QuoteDetail from '../components/QuoteDetail'
   import NextDetail from '../components/NextDetail'
+  import DetailCover from '../components/DetailCover'
 
   export default {
     props: [ 'page' ],
-    components: { Halo, Navigation, HeaderDetail, QuoteDetail, NextDetail, },
+    components: { Halo, Navigation, HeaderDetail, QuoteDetail, NextDetail, DetailCover, },
 
     head() {
       const pageTitle = this.page.title
