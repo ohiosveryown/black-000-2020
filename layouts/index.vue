@@ -68,6 +68,7 @@
 
 <!-- logic -->
 <script>
+  import { staticLogic, leaveLogic } from '../logic/for-index'
   import EmblaCarousel from 'embla-carousel'
   import HaloIndex from '../components/HaloIndex'
   import Navigation from '../components/Navigation'
@@ -96,6 +97,7 @@
     },
 
     mounted() {
+      staticLogic()
       // carousel
       const emblaNode = document.querySelector('.carousel-wrapper')
       const embla = EmblaCarousel(emblaNode, {
@@ -130,6 +132,10 @@
           halo.style.opacity = 1
         })
       })
+    },
+
+    beforeDestroy() {
+      leaveLogic()
     },
   }
 </script>
