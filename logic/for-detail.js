@@ -7,9 +7,9 @@ const staticLogic = () => {
     let vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
   })
-
+  // constance wu's
   const cover = document.querySelector('.cover')
-
+  // logic
   cover.style.cssText = `
     animation: scaleLeft var(--animbase) forwards var(--inout);
   `
@@ -17,9 +17,10 @@ const staticLogic = () => {
 
 
 const toDetail = () => {
+  // constance wu's
   const cover = document.querySelector('.cover')
   const asideContent = document.querySelector('.aside-content')
-
+  // logic styling
   cover.style.cssText = `
     animation: detailLeave var(--animbase) forwards var(--inout);
   `
