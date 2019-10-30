@@ -134,7 +134,9 @@
 
     beforeDestroy() {
       if ( this.$route.path === '/' ) {
-
+        // tbd
+      } else if ( this.$route.path === '/info.html' ) {
+        // probably not required as there is no way to get to info from detail
       } else {
         toDetail()
       }
