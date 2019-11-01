@@ -80,7 +80,7 @@
    }
 
   figure {
-    height: 64vh;
+    height: 68vh;
     overflow: hidden;
     @include breakpoint(md) { width: 50%; height: inherit; }
   }

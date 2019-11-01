@@ -44,10 +44,12 @@
 }
 
 .detail-fade-in-fig {
-  opacity: 0;
-  animation:
-    fadeIn 1400ms ease forwards 500ms,
-    scaleDown 1400ms ease forwards 500ms;
+  @include breakpoint(md) {
+    opacity: 0;
+    animation:
+      fadeIn 1400ms ease forwards 500ms,
+      scaleDown 1400ms ease forwards 500ms;
+  }
 }
 
 .detail-fade-in-bg {
