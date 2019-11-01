@@ -28,6 +28,7 @@
 
     <FooterIndex/>
     <IndexCover/>
+    <IndexCoverTri/>
 
   </div>
 </template>
@@ -73,12 +74,13 @@
   import HaloIndex from '../components/HaloIndex'
   import Navigation from '../components/Navigation'
   import IndexCover from '../components/IndexCover'
+  import IndexCoverTri from '../components/IndexCoverTri'
   import Carousel from '../components/Carousel'
   import FooterIndex from '../components/FooterIndex'
 
   export default {
     props: [ 'page' ],
-    components: { HaloIndex, Navigation, IndexCover, Carousel, FooterIndex, },
+    components: { HaloIndex, Navigation, IndexCover, IndexCoverTri, Carousel, FooterIndex, },
 
     head() {
       const pageTitle = this.page.title
