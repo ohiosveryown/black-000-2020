@@ -52,6 +52,8 @@
       </section>
     </main>
 
+    <DetailCoverTri/>
+
   </div>
 </template>
 
@@ -200,12 +202,14 @@
 
 <!-- logic -->
 <script>
+  import { toIndex } from '../logic/for-info'
   import Halo from '../components/Halo'
   import Navigation from '../components/Navigation'
+  import DetailCoverTri from '../components/DetailCoverTri'
 
   export default {
     props: [ 'page' ],
-    components: { Halo, Navigation, },
+    components: { Halo, Navigation, DetailCoverTri },
 
     head() {
       const pageTitle = this.page.title
@@ -221,6 +225,10 @@
           }
         ],
       }
+    },
+
+    beforeDestroy() {
+      toIndex()
     },
   }
 </script>
