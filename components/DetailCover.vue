@@ -17,13 +17,9 @@
     z-index: var(--z5);
     width: 100vw; height: 100vh;
     background: var(--grey);
-    transform: scaleX(0);
+    transform: scaleX(1);
+    transform-origin: left;
     will-change: transform;
-
-    @include breakpoint(md) {
-      transform: scaleX(1);
-      transform-origin: left;
-    }
   }
 
 </style>

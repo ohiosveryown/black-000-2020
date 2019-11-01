@@ -13,20 +13,13 @@
 
   .cover {
     position: fixed;
-    bottom: 0; left: 0;
+    top: 0; left: 0;
     z-index: var(--z5);
-    width: 100vw; height: 32vh;
+    width: 100vw; height: 100vh;
     background: var(--grey);
-    transform: scale(1,1) translate(0,32vh);
-    transform-origin: bottom;
+    transform: scale(0,1) translate(0,0);
+    transform-origin: right;
     will-change: transform;
-
-    @include breakpoint(md) {
-      top: 0;
-      width: 100vw; height: 100vh;
-      transform: scale(0,1) translate(0,0);
-      transform-origin: right;
-    }
   }
 
 </style>

@@ -11,9 +11,12 @@ const staticLogic = () => {
   const mq = window.matchMedia( '(min-width: 700px)' )
   const cover = document.querySelector('.cover')
   // styles
+  cover.style.cssText = `
+    animation: scaleLeftSm var(--animbase) forwards var(--inout);
+  `
   if (mq.matches) {
     cover.style.cssText = `
-      animation: scaleLeft var(--animbase) forwards var(--inout);
+      animation: scaleLeftMd var(--animbase) forwards var(--inout);
     `
   }
 }
