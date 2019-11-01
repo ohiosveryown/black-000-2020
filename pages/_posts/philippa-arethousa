@@ -1,0 +1,11 @@
+---
+layout: detail
+id: '01'
+title: Philippa Arethousa
+first_name: Philippa
+last_name: Arethousa
+assets:
+  img: ./img/000-7.jpg
+quote: |
+  We changed this text 👋🏼.
+---
