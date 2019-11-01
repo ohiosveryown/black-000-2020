@@ -3,9 +3,9 @@
   <section>
 
 
-    <div/>
-    <div/>
-    <div/>
+    <div class="first"/>
+    <div class="second"/>
+    <div class="third"/>
 
 
   </section>
@@ -24,22 +24,19 @@
     top: 0;
     z-index: var(--z5);
     height: 100vh;
-    background: var(--grey);
+    background: var(--darkest);
+    transform-origin: bottom;
+    will-change: transform;
   }
 
-  div:nth-of-type(1) {
+  .first {
     left: 0;
     width: 100vw;
     transform: scale(1,1) translate(0,0);
-    transform-origin: top;
-    will-change: transform;
-
-    @include breakpoint(md) {
-      width: 33.333vw;
-    }
+    @include breakpoint(md) { width: 33.333vw; }
   }
 
-  div:nth-of-type(2), div:nth-of-type(3) {
+  .second, .third {
     display: none;
 
     @include breakpoint(md) {
@@ -49,7 +46,7 @@
     }
   }
 
-  div:nth-of-type(3) { left: 66.666vw; }
+  .third { left: 66.666vw; }
 
 </style>
 

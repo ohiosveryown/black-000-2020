@@ -87,3 +87,8 @@
   from { opacity: 1; }
   to   { opacity: 0; }
 }
+
+@keyframes scaleCoverTri {
+  from { transform: scaleY(1); }
+  to   { transform: scaleY(0); }
+}

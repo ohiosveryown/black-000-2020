@@ -1,5 +1,18 @@
 const staticLogic = () => {
-
+  // constance wu's
+  const firstCover = document.querySelector('.first')
+  const secondCover = document.querySelector('.second')
+  const thirdCover = document.querySelector('.third')
+  // styles
+  firstCover.style.cssText = `
+    animation: scaleCoverTri 1200ms forwards var(--inout);
+  `
+  secondCover.style.cssText = `
+    animation: scaleCoverTri 1200ms forwards var(--inout) 150ms;
+  `
+  thirdCover.style.cssText = `
+    animation: scaleCoverTri 1200ms forwards var(--inout) 300ms;
+  `
 }
 
 const leaveLogic = () => {
