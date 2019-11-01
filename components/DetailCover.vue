@@ -16,12 +16,14 @@
     top: 0; left: 0;
     z-index: var(--z5);
     width: 100vw; height: 100vh;
-    // background: var(--darkest);
-    // background: #121111;
     background: var(--grey);
-    transform: scaleX(1);
-    transform-origin: left;
+    transform: scaleX(0);
     will-change: transform;
+
+    @include breakpoint(md) {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
   }
 
 </style>

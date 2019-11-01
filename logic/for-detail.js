@@ -8,11 +8,14 @@ const staticLogic = () => {
     document.documentElement.style.setProperty('--vh', `${vh}px`)
   })
   // constance wu's
+  const mq = window.matchMedia( '(min-width: 700px)' )
   const cover = document.querySelector('.cover')
-  // logic
-  cover.style.cssText = `
-    animation: scaleLeft var(--animbase) forwards var(--inout);
-  `
+  // styles
+  if (mq.matches) {
+    cover.style.cssText = `
+      animation: scaleLeft var(--animbase) forwards var(--inout);
+    `
+  }
 }
 
 
