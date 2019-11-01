@@ -33,5 +33,16 @@ const leaveLogic = () => {
   }
 }
 
+const toInfo = () => {
+  // constance wu's
+  const infoCover = document.querySelector('.to-info')
+  // styles
+  infoCover.style.cssText = `
+    transform: scaleY(1);
+    transition: all 1000ms var(--inout);
+  `
+}
+
+
 // exports
-export { staticLogic, leaveLogic }
+export { staticLogic, leaveLogic, toInfo }

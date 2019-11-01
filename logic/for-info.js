@@ -1,3 +1,13 @@
+const staticLogic = () => {
+  // constance wu's
+  const cover = document.querySelector('.cover')
+  // styles
+  cover.style.cssText = `
+    animation: scaleCoverTri 1200ms forwards var(--inout);
+    transform-origin: bottom;
+  `
+}
+
 const toIndex = () => {
   // constance wu's
   const firstCover = document.querySelector('.first')
@@ -16,4 +26,4 @@ const toIndex = () => {
 }
 
 // exports
-export { toIndex }
+export { staticLogic, toIndex }

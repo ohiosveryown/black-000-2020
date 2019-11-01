@@ -29,6 +29,7 @@
     <FooterIndex/>
     <IndexCover/>
     <IndexCoverTri/>
+    <ToInfoCover/>
 
   </div>
 </template>
@@ -69,18 +70,19 @@
 
 <!-- logic -->
 <script>
-  import { staticLogic, leaveLogic } from '../logic/for-index'
+  import { staticLogic, leaveLogic, toInfo } from '../logic/for-index'
   import EmblaCarousel from 'embla-carousel'
   import HaloIndex from '../components/HaloIndex'
   import Navigation from '../components/Navigation'
   import IndexCover from '../components/IndexCover'
   import IndexCoverTri from '../components/IndexCoverTri'
+  import ToInfoCover from '../components/ToInfoCover'
   import Carousel from '../components/Carousel'
   import FooterIndex from '../components/FooterIndex'
 
   export default {
     props: [ 'page' ],
-    components: { HaloIndex, Navigation, IndexCover, IndexCoverTri, Carousel, FooterIndex, },
+    components: { HaloIndex, Navigation, IndexCover, IndexCoverTri, Carousel, FooterIndex, ToInfoCover },
 
     head() {
       const pageTitle = this.page.title
@@ -137,7 +139,11 @@
     },
 
     beforeDestroy() {
-      leaveLogic()
+      if ( this.$route.path === '/info.html' ) {
+        toInfo()
+      } else {
+        leaveLogic()
+      }
     },
   }
 </script>
