@@ -44,6 +44,7 @@
     </main>
 
     <DetailCover/>
+    <DetailCoverTri/>
 
   </div>
 </template>
@@ -107,17 +108,18 @@
 
 <!-- logic -->
 <script>
-  import { staticLogic, toDetail } from '../logic/for-detail'
+  import { staticLogic, toDetail, toIndex } from '../logic/for-detail'
   import Halo from '../components/Halo'
   import Navigation from '../components/Navigation'
   import HeaderDetail from '../components/HeaderDetail'
   import QuoteDetail from '../components/QuoteDetail'
   import NextDetail from '../components/NextDetail'
   import DetailCover from '../components/DetailCover'
+  import DetailCoverTri from '../components/DetailCoverTri'
 
   export default {
     props: [ 'page' ],
-    components: { Halo, Navigation, HeaderDetail, QuoteDetail, NextDetail, DetailCover, },
+    components: { Halo, Navigation, HeaderDetail, QuoteDetail, NextDetail, DetailCover, DetailCoverTri },
 
     head() {
       const pageTitle = this.page.title
@@ -134,7 +136,7 @@
 
     beforeDestroy() {
       if ( this.$route.path === '/' ) {
-        // tbd
+        toIndex()
       } else if ( this.$route.path === '/info.html' ) {
         // probably not required as there is no way to get to info from detail
       } else {

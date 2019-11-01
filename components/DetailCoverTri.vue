@@ -25,7 +25,8 @@
     z-index: var(--z5);
     height: 100vh;
     background: var(--darkest);
-    transform-origin: bottom;
+    transform-origin: top;
+    transform: scale(1,0);
     will-change: transform;
   }
 
