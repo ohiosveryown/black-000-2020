@@ -2,9 +2,6 @@
 <template>
   <div class="detail-wrapper">
 
-    <!-- cursor halo -->
-    <!-- <Halo/> -->
-
     <!-- nav -->
     <Navigation
       title = 'Home'
