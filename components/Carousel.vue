@@ -20,9 +20,6 @@
       </figcaption>
     </figure>
 
-
-
-
   </article>
 </template>
 
