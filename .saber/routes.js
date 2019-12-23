@@ -13,6 +13,30 @@
               }
             },
 {
+              path: "/posts/d-010.html",
+              meta: {
+                __relative: '_posts/d-010.md',
+                __pageId: '3306f4fc'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-d-010-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-010.md?saberPage=3306f4fc")
+                
+              }
+            },
+{
+              path: "/posts/d-011.html",
+              meta: {
+                __relative: '_posts/d-011.md',
+                __pageId: '33060c3e'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-d-011-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-011.md?saberPage=33060c3e")
+                
+              }
+            },
+{
               path: "/posts/d-02.html",
               meta: {
                 __relative: '_posts/d-02.md',
@@ -61,66 +85,6 @@
               }
             },
 {
-              path: "/",
-              meta: {
-                __relative: 'index.md',
-                __pageId: '26bb90aa'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--index-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/index.md?saberPage=26bb90aa")
-                
-              }
-            },
-{
-              path: "/info.html",
-              meta: {
-                __relative: 'info.md',
-                __pageId: '1845f05f'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--info-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/info.md?saberPage=1845f05f")
-                
-              }
-            },
-{
-              path: "/posts/d-011.html",
-              meta: {
-                __relative: '_posts/d-011.md',
-                __pageId: '33060c3e'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--_posts-d-011-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-011.md?saberPage=33060c3e")
-                
-              }
-            },
-{
-              path: "/posts/d-010.html",
-              meta: {
-                __relative: '_posts/d-010.md',
-                __pageId: '3306f4fc'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--_posts-d-010-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-010.md?saberPage=3306f4fc")
-                
-              }
-            },
-{
-              path: "/posts/d-012.html",
-              meta: {
-                __relative: '_posts/d-012.md',
-                __pageId: '33052380'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--_posts-d-012-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-012.md?saberPage=33052380")
-                
-              }
-            },
-{
               path: "/posts/d-06.html",
               meta: {
                 __relative: '_posts/d-06.md',
@@ -165,6 +129,42 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--_posts-d-09-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/d-09.md?saberPage=07730230")
+                
+              }
+            },
+{
+              path: "/posts/kiralfy-kennion.html",
+              meta: {
+                __relative: '_posts/kiralfy-kennion.md',
+                __pageId: '448802d6'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-kiralfy-kennion-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/_posts/kiralfy-kennion.md?saberPage=448802d6")
+                
+              }
+            },
+{
+              path: "/",
+              meta: {
+                __relative: 'index.md',
+                __pageId: '26bb90aa'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--index-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/index.md?saberPage=26bb90aa")
+                
+              }
+            },
+{
+              path: "/info.html",
+              meta: {
+                __relative: 'info.md',
+                __pageId: '1845f05f'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--info-md" */ "/Users/pence/Desktop/projects/black-000/black-000-2020/pages/info.md?saberPage=1845f05f")
                 
               }
             },
