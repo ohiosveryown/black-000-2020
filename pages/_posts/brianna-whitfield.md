@@ -1,6 +1,7 @@
 ---
 layout: detail
 id: '15'
+date: 2019-01-15
 title: Brianna Whitfield
 first_name: Brianna
 last_name: Whitfield
