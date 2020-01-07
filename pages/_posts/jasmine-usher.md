@@ -6,7 +6,7 @@ title: Jasmine Usher
 first_name: Jasmine 
 last_name: Usher
 assets:
-  img: ./img/000-24.jpg
+  img: ./img/000-29.jpg
 quote: |
-  “I haven’t always been proud of my hair because it’s so thick and “nappy”. So it’s important for me to accept every aspect about my self in order to fully love myself.
-  ---
+  “My hair makes me who I am! I love my mane. It’s unique, fluffy and all mine. I went natural because my hair stylist wouldn’t give me a perm, and here I am 11 years in and loving the natural life! 
+---
