@@ -1,7 +1,7 @@
 ---
 layout: detail
 id: '28'
-date: 2019-01-28
+date: 2019-01-29
 title: Disa Robb
 first_name: Disa
 last_name: Robb
