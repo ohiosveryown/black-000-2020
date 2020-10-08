@@ -1,7 +1,7 @@
 ---
 layout: detail
 id: '31'
-date: 2019-01-27
+date: 2020-10-07
 title: Seble Abebe
 first_name: Test 
 last_name: Last
