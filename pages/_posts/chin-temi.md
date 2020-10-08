@@ -4,7 +4,7 @@ id: '29'
 date: 2019-01-29
 title: Chinelo & Temi
 first_name: Chinelo 
-last_name: & Temi
+last_name: Temi
 assets:
   img: ./img/000-6.jpg
 quote: |
