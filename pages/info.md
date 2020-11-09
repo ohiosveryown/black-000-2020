@@ -7,12 +7,34 @@ paragraph_two: |
   Throughout the project, 'versatility' is presented from many of the women and reflects my vision as to bring inspiration to those who are figuring out their path.
 ---
 
-* Tanya Hargrove
-* Maura Channing
-* Melissa Johnson
-* Vanessa Vilasenor
-* Elizabth Chow
-* Daphne Jacobs
-* Ryann McClure
-* Tisha Ollison
-* Amy Oum
+* Kiersten Harris
+* Maura Chanz
+* Courtnie Stavrou 
+* Valarie Magee
+* Ashley Marietta
+* Aspen Evans
+* Diamond Sands
+* Maya Fizer
+* Felicité Cesaire
+* Isoke Luqman
+* Brianna whitfield 
+* Disa Robb
+* Fiona Thomas 
+* De'Ja Williams
+* Britta'ny Bernier
+* Natasha Day
+* Tyler Anderson
+* Kiana Shine
+* Patresea Peppers
+* Imani Green
+* Sophia Bryce
+* A'Pril Najm
+* Jasmine Usher
+* Andrenise Faust
+* Deanna Ross
+* Chinelo Obiamalu
+* Seble Abebe
+* Ja'Tia Underwood 
+* Kiralfy Kennion
+* Ebone Shardae
+* Kai Black
